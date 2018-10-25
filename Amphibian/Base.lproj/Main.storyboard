@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,101 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Amphibian" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d32-fc-A88">
+                                <rect key="frame" x="16" y="149" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jumlah Pinjaman" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3T-O8-Y3S">
+                                <rect key="frame" x="16" y="120" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tvz-o2-6lo">
+                                <rect key="frame" x="16" y="229" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lama Pinjaman" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbl-3R-v8M">
+                                <rect key="frame" x="16" y="200" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cicilan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dl8-Lb-yMS">
+                                <rect key="frame" x="16" y="280" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.000.000,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTX-jD-8md" userLabel="Cicilan Desciption">
+                                <rect key="frame" x="16" y="317" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9th-8k-gTE">
+                                <rect key="frame" x="0.0" y="20" width="375" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amphibian on iOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKT-pe-zWM">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.3294117647" green="0.69411764710000001" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="dKT-pe-zWM" firstAttribute="top" secondItem="9th-8k-gTE" secondAttribute="top" id="Dby-It-TCo"/>
+                                    <constraint firstAttribute="bottom" secondItem="dKT-pe-zWM" secondAttribute="bottom" id="Du1-Zd-Si1"/>
+                                    <constraint firstAttribute="trailing" secondItem="dKT-pe-zWM" secondAttribute="trailing" id="ecw-q6-R5Z"/>
+                                    <constraint firstAttribute="height" constant="50" id="eht-sn-yn1"/>
+                                    <constraint firstItem="dKT-pe-zWM" firstAttribute="leading" secondItem="9th-8k-gTE" secondAttribute="leading" id="lhb-Vh-tUV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tTX-jD-8md" firstAttribute="top" secondItem="dl8-Lb-yMS" secondAttribute="bottom" constant="16" id="0Nt-DY-IKh"/>
+                            <constraint firstItem="tvz-o2-6lo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="1MO-WO-38u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hbl-3R-v8M" secondAttribute="trailing" constant="16" id="2pw-2o-5g3"/>
+                            <constraint firstItem="hbl-3R-v8M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="7tk-o7-WD2"/>
+                            <constraint firstItem="hbl-3R-v8M" firstAttribute="top" secondItem="d32-fc-A88" secondAttribute="bottom" constant="21" id="91o-pW-D0F"/>
+                            <constraint firstItem="w3T-O8-Y3S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="9EB-nP-L2Z"/>
+                            <constraint firstItem="d32-fc-A88" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="CDH-p6-vD9"/>
+                            <constraint firstItem="9th-8k-gTE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Mb7-RB-YOs"/>
+                            <constraint firstItem="w3T-O8-Y3S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Tjg-QD-Ooc"/>
+                            <constraint firstItem="tTX-jD-8md" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Zl1-AS-Fhl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dl8-Lb-yMS" secondAttribute="trailing" constant="16" id="bxn-ID-cRU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tTX-jD-8md" secondAttribute="trailing" constant="16" id="co2-bS-WcQ"/>
+                            <constraint firstItem="d32-fc-A88" firstAttribute="top" secondItem="w3T-O8-Y3S" secondAttribute="bottom" constant="8" id="hCG-WL-zRY"/>
+                            <constraint firstItem="9th-8k-gTE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="k4p-nD-XaY"/>
+                            <constraint firstItem="dl8-Lb-yMS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="mBL-Me-eg5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tvz-o2-6lo" secondAttribute="trailing" constant="16" id="nNo-DK-P8o"/>
+                            <constraint firstItem="tvz-o2-6lo" firstAttribute="top" secondItem="hbl-3R-v8M" secondAttribute="bottom" constant="8" id="s7w-UQ-rGs"/>
+                            <constraint firstItem="dl8-Lb-yMS" firstAttribute="top" secondItem="tvz-o2-6lo" secondAttribute="bottom" constant="21" id="yht-Tg-A4P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w3T-O8-Y3S" secondAttribute="trailing" constant="16" id="ylv-2b-W55"/>
+                            <constraint firstItem="9th-8k-gTE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ysy-vw-ID1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d32-fc-A88" secondAttribute="trailing" constant="16" id="zrW-fC-cWl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="jumlahPinjamanTextField" destination="d32-fc-A88" id="gXd-Je-bfe"/>
+                        <outlet property="lamaPinjamanTextField" destination="tvz-o2-6lo" id="5IV-2q-oD5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
